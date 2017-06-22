@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Todo List</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="/views/styles.css">
+</head>
+<body>
+  <div class="page">
+    <div class="add-form">
+      <input type="text" name="add-form__input" placeholder="New todo" id="add-form__input">
+      <button class="add-form__button" id="add-form__button">Add</button>
+    </div>
+    <ul class="list">
+      {{#todos}}
+        {{^complete}}
+          <li>
+            <input type="checkbox" name="{{text}}" value="{{id}}" id="{{id}}" class="classCheckbox" data-text="{{text}}">
+            <label for="{{id}}"> {{text}}</label>
+          </li>
+        {{/complete}}
+        {{#complete}}
+          <li>
+            <input type="checkbox" name="{{text}}" value="{{id}}" id="{{id}}" class="classCheckbox" data-text="{{text}}" checked>
+            <label for="{{id}}"> {{text}}</label>
+          </li>
+        {{/complete}}
+      {{/todos}}
+      {{^todos}}
+        <li>All Done</li>
+      {{/todos}}
+    </ul>
+  </div>
+  <script src="/views/main.js" charset="utf-8"></script>
+</body>
+</html>

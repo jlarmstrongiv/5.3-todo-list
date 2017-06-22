@@ -1,0 +1,10 @@
+* {
+  box-sizing: border-box;
+  background-color: #EEEEEE;
+}
+.list {
+  list-style-type: none;
+}
+input:checked {
+  text-decoration: line-through;
+}

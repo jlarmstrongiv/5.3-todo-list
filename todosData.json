@@ -1,0 +1,35 @@
+{
+  "todos": [
+    {
+      "id": 0,
+      "text": "nope",
+      "complete": true
+    },
+    {
+      "id": 1,
+      "text": "yolo",
+      "complete": true
+    },
+    {
+      "id": 2,
+      "text": "booya",
+      "complete": true
+    },
+    {
+      "id": 3,
+      "text": "projects",
+      "complete": false
+    },
+    {
+      "id": 4,
+      "text": "bibliography",
+      "complete": false
+    },
+    {
+      "id": 5,
+      "text": "am I even ready",
+      "complete": false
+    }
+  ],
+  "_locals": {}
+}
