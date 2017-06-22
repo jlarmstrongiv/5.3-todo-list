@@ -28,18 +28,6 @@ app.get('/', function (req, res) {
   return res.render('index', context);
 });
 
-// jsonfile.readFile(todosFile, function(err, obj) {
-//   console.dir(obj)
-// })
-
-// jsonfile.writeFileSync(todosFile, todosObj, {spaces: 2}, function(err) {
-//   console.error(err)
-//   {
-//     "text": "test",
-//     "complete": true
-//   }
-// });
-
 app.post('/todo/:todoId/status/:status/text/:text', function (req, res) {
   console.log('successful post');
   // console.log(req.body);
